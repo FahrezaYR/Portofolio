@@ -7,6 +7,8 @@ function typeEffect() {
     document.getElementById('typing-text').textContent += text.charAt(index);
     index++;
     setTimeout(typeEffect, 50);
+  } else {
+    if (document.getElementById('cursor')) document.getElementById('cursor').style.display = 'none';
   }
 }
 
