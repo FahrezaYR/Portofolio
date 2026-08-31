@@ -15,5 +15,5 @@ function typeEffect() {
 window.addEventListener('DOMContentLoaded', () => {
   typeEffect();
   
-  document.getElementById('year').textContent = new Date().getFullYear();
+  if (document.getElementById('year')) document.getElementById('year').textContent = new Date().getFullYear();
 });
